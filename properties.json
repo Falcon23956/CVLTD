@@ -1,0 +1,45 @@
+[
+  {
+    "id": "matuu-1-8",
+    "title": "1/8 Acre Plots \u2013 Matuu Bypass",
+    "location": "Matuu, Kenya",
+    "price": "KES 750,000",
+    "type": "Residential Plots",
+    "description": "Prime serviced 1/8 acre plots located just off the Matuu Bypass. Red soil, ready to build, well-developed area with water and electricity nearby. Perfect for residential or investment purposes.",
+    "images": [
+      "assets/images/matuu1.jpg",
+      "assets/images/matuu2.jpg",
+      "assets/images/matuu3.jpg",
+      "assets/images/matuu4.jpg",
+      "assets/images/matuu5.jpg"
+    ]
+  },
+  {
+    "id": "juja-50x100",
+    "title": "50\u00d7100 Plots \u2013 Juja Farm",
+    "location": "Juja Farm, Kiambu County",
+    "price": "KES 1,850,000",
+    "type": "Residential/Investment",
+    "description": "Fast-growing neighborhood with excellent appreciation. Ideal for rental units, family homes, or land banking. Accessible through newly tarmacked roads.",
+    "images": [
+      "assets/images/juja1.jpg",
+      "assets/images/juja2.jpg",
+      "assets/images/juja3.jpg",
+      "assets/images/juja4.jpg"
+    ]
+  },
+  {
+    "id": "konza-1-8",
+    "title": "1/8 Acre Plots \u2013 Konza Techno City Area",
+    "location": "Konza, Machakos",
+    "price": "KES 550,000",
+    "type": "Mixed-Use",
+    "description": "Affordable plots strategically located near Kenya\u2019s fast-developing smart city. Excellent for speculation and long-term investment. Electricity close by.",
+    "images": [
+      "assets/images/konza1.jpg",
+      "assets/images/konza2.jpg",
+      "assets/images/konza3.jpg",
+      "assets/images/konza4.jpg"
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Properties — Crestvista Properties LTD</title>
+<link rel="icon" href="/assets/favicon.png">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head><body>
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand"><a href="/"><img src="/assets/logo.png" alt="Crestvista logo"></a></div>
+    <nav>
+      <button class="hamburger" aria-label="menu">☰</button>
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/properties.html">Properties</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="cta"><a class="btn" href="/properties.html">View Properties</a></div>
+  </div>
+</header>
+
+<main class="container" style="padding:24px 0">
+  <h1>Properties</h1>
+  <div id="listings" class="grid grid-cols-3"></div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div><strong>Crestvista Properties LTD © 2025</strong><br>Lonak business center, Kasarani, Nairobi Kenya</div>
+      <div class="icons">
+        <a class="icon" href="tel:+254758625209">📞 0758 625 209</a>
+        <a class="icon" href="tel:+254739944751">📞 0739 944 751</a>
+        <a class="icon" href="https://wa.me/254758625209" target="_blank">💬 WhatsApp</a>
+        <a class="icon" href="mailto:ingo@crestvistapropertiesltd.co.ke">✉️ ingo@crestvistapropertiesltd.co.ke</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+fetch('/properties.json').then(r=>r.json()).then(data=>{
+  const el = document.getElementById('listings');
+  data.forEach(p=>{
+    const card = document.createElement('article');
+    card.className='card fade-up';
+    card.innerHTML = `
+      <img class="property-img" src="/${p.images[0]}" alt="${p.title}">
+      <h3 style="margin:10px 0 6px">${p.title}</h3>
+      <div style="color:#666;margin-bottom:8px">${p.location} · ${p.price}</div>
+      <p style="color:#444">${p.description.slice(0,160)}...</p>
+      <div style="margin-top:10px"><a class="btn" href="/property_${p.id}.html">View Property</a></div>
+    `;
+    el.appendChild(card);
+  });
+});
+</script>
+<script src="/assets/js/main.js"></script></body></html>
